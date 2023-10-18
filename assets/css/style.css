@@ -1,0 +1,141 @@
+:root {
+    --font: ;
+}
+
+
+body {
+    margin: 0;
+    flex-direction: row;
+    font-family: sans-serif;
+    /* font-size: large; */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px dashed red; */
+    color: aliceblue;
+    background-image: linear-gradient(to right, rgb(0, 242, 255), rgb(75, 16, 126));
+}
+
+h1,
+h3 {
+    font-size: xxx-large;
+    margin: 10px;
+
+}
+
+main {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding-right: 10px;
+    flex-direction: row;
+    /* border: 2px dashed red; */
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    float: left;
+    margin: 25px;
+    /* padding-left:100px; */
+    /* height: 400px; */
+    width: 20%;
+    font-size: x-large;
+}
+
+input {
+    font-size: x-large;
+    margin: 10px;
+    width: 90%;
+    padding: 10px;
+    border-color: gainsboro;
+    border-radius: 8px;
+
+}
+
+#search-btn {
+    background-color: rgb(165, 190, 255);
+    width: 100%;
+}
+
+.history-btn {
+    font-size: x-large;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(187, 197, 222);
+
+}
+
+#current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 55px;
+    margin: 25px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: darkcyan;
+    color: ghostwhite;
+    border-radius: 8px;
+    font-size: xx-large;
+}
+
+#current-details {
+    margin: 10px;
+    align-items: start;
+}
+
+h3 {
+    /* display: flex; */
+    /* flex-direction: row; */
+    font-size: x-large;
+    float: right;
+    width: 61%;
+    margin: 0px;
+    /* border: 2px dashed red; */
+}
+
+.date {
+    font-size: xx-large;
+}
+
+#five-day {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 35px;
+    width: 70%;
+    /* border: 2px dashed red; */
+}
+
+.five-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: cadetblue;
+    color: ghostwhite;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px 3px;
+    padding: 0px;
+    width: 20%;
+}
+
+.five-date {
+    font-size: large;
+}
+
+.five-details {
+    font-size: small;
+    margin: 0px
+}
+
+
+img {
+    max-height: auto;
+    max-width: 95px;
+}
