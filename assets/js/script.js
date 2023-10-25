@@ -68,7 +68,6 @@ $('#search-btn').on('click', function (event) {
     if (!getHistory.includes(setHistory) && $('#search').val() !== '') { 
         getHistory.push(setHistory);
         localStorage.setItem('allHistory', JSON.stringify(getHistory));
-        console.log(getHistory.includes(setHistory))
         $('#history').append(
             `<button class="history-btn">${setHistory}</button>`)
     }
@@ -81,8 +80,6 @@ $('#search-btn').on('click', function (event) {
 $('.history-btn').on('click', function (event) {
 
     event.preventDefault();
-
-    console.log(event.target)
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${$(event.target).text()}&appid=${key}&units=imperial`)
         .then(response => response.json())
