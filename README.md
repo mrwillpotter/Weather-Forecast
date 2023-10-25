@@ -1,13 +1,13 @@
 # Weather-Forecast
 
-##Description
+## Description
 This app is designed to load and display the current weather as well as a five-day forecast for the city searched in the input field. The app will also save your searches into local storage and display clickable buttons under the search form.
 
-##API Fetches
+## API Fetches
 This app utilizes the Open Weather API for the current weather and five-day forecast.
 
-##GitHub URL:
+## GitHub URL:
 https://github.com/mrwillpotter/Weather-Forecast/
 
-##Deployed URL:
+## Deployed URL:
 https://mrwillpotter.github.io/Weather-Forecast/
