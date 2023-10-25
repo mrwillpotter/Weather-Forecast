@@ -4,51 +4,68 @@
 
 
 body {
-    margin: 0;
+    margin: 0px;
     flex-direction: row;
     font-family: sans-serif;
-    /* font-size: large; */
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px dashed red; */
+    border: 2px dashed red;
     color: aliceblue;
     background-image: linear-gradient(to right, rgb(0, 242, 255), rgb(75, 16, 126));
 }
 
-h1,
-h3 {
+h1 {
     font-size: xxx-large;
-    margin: 10px;
-
+    margin: 0px;
+    padding: 15px 15px 0px 15px;
+}
+h2{
+    font-size: x-large;
+    margin: 0px;
+    padding: 0px 15px 15px 25px;
+}
+h3 {
+    font-size: xx-large;
+    margin: 0px;
+    padding: 15px 15px 0px 15px;
+}
+h4{
+    font-size: x-large;
+    margin: 0px;
+    padding-left: 25px;
 }
 
+
 main {
+    display: flex;
+    /* flex-direction: row; */
     /* display: flex; */
-    /* flex-wrap: wrap; */
-    padding-right: 10px;
+    flex-wrap: wrap;
     flex-direction: row;
-    /* border: 2px dashed red; */
+    border: 2px dashed red;
 }
 
 aside {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: start;
     float: left;
-    margin: 25px;
+    padding: 25px;
     /* padding-left:100px; */
     /* height: 400px; */
     width: 20%;
     font-size: x-large;
+    border: 2px dashed red;
 }
 
 input {
     font-size: x-large;
-    margin: 10px;
+    margin:10px 0 5px 0;
     width: 90%;
     padding: 10px;
     border-color: gainsboro;
@@ -58,12 +75,17 @@ input {
 
 #search-btn {
     background-color: rgb(165, 190, 255);
+    margin:10px 0;
     width: 100%;
+}
+
+#history {
+    width:100%;
 }
 
 .history-btn {
     font-size: x-large;
-    margin: 10px 0;
+    margin: 5px 0 5px 0;
     width: 100%;
     padding: 10px;
     border-radius: 8px;
@@ -74,41 +96,42 @@ input {
 #current {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0 55px;
+    align-items: start;
+    padding: 0 25px;
     margin: 25px;
+    width: 100%;
     border: 3px solid rgb(0, 0, 0);
     background-color: darkcyan;
     color: ghostwhite;
     border-radius: 8px;
-    font-size: xx-large;
+    font-size: x-large;
+}
+
+.city {
+    font-size: xxx-large;
+    font-weight: bolder;    
 }
 
 #current-details {
-    margin: 10px;
-    align-items: start;
-}
-
-h3 {
-    /* display: flex; */
-    /* flex-direction: row; */
-    font-size: x-large;
-    float: right;
-    width: 61%;
-    margin: 0px;
-    /* border: 2px dashed red; */
+    margin: 0 !important;
+    width:100%
+} 
+.image {
+    max-height: auto;
+    min-width: 200px;
+    position: relative;
 }
 
 .date {
-    font-size: xx-large;
+    font-size: large;
 }
 
 #five-day {
     display: flex;
     flex-direction: row;
     float: right;
-    margin-right: 35px;
-    width: 70%;
+    padding: 25px;
+    width: 100%;
     /* border: 2px dashed red; */
 }
 
@@ -120,13 +143,12 @@ h3 {
     background-color: cadetblue;
     color: ghostwhite;
     border: 3px solid rgb(0, 0, 0);
-    margin: 10px 3px;
-    padding: 0px;
     width: 20%;
 }
 
 .five-date {
-    font-size: large;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .five-details {
@@ -137,5 +159,5 @@ h3 {
 
 img {
     max-height: auto;
-    max-width: 95px;
+    max-width: 30px;
 }
