@@ -1,7 +1,3 @@
-:root {
-    --font: ;
-}
-
 
 body {
     margin: 0px;
@@ -13,7 +9,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px dashed red;
     color: aliceblue;
     background-image: linear-gradient(to right, rgb(0, 242, 255), rgb(75, 16, 126));
 }
@@ -42,11 +37,8 @@ h4{
 
 main {
     display: flex;
-    /* flex-direction: row; */
-    /* display: flex; */
     flex-wrap: wrap;
     flex-direction: row;
-    border: 2px dashed red;
 }
 
 aside {
@@ -56,11 +48,8 @@ aside {
     align-items: start;
     float: left;
     padding: 25px;
-    /* padding-left:100px; */
-    /* height: 400px; */
     width: 20%;
     font-size: x-large;
-    border: 2px dashed red;
 }
 
 input {
@@ -132,7 +121,6 @@ input {
     float: right;
     padding: 25px;
     width: 100%;
-    /* border: 2px dashed red; */
 }
 
 .five-day {

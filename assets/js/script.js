@@ -1,6 +1,5 @@
 
 // Establishing few variables because Jquery's syntax is more concise than using query selectors.
-// var searchInput = $('#search');
 var getHistory = JSON.parse(localStorage.getItem('allHistory')) || []
 var setHistory = $('#search').val();
 
@@ -73,8 +72,6 @@ $('#search-btn').on('click', function (event) {
     }
     $('#search').val('')
 
-    //Rerender search history to add new button
-    // renderSearchHistory();
 });
 
 $('.history-btn').on('click', function (event) {
